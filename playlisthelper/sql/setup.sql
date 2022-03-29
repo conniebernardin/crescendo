@@ -10,7 +10,8 @@ CREATE TABLE artists (
    tempo INT,
    genre VARCHAR (255),
    language VARCHAR (255),
-   link VARCHAR (255)
+   link VARCHAR (255),
+   length INT
 );
 
 CREATE TABLE joins (
