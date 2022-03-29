@@ -1,10 +1,10 @@
 CREATE TABLE artists (
-    id SERIAL PRIMARY KEY,
+    artist_id SERIAL PRIMARY KEY,
     artist_name VARCHAR(255)
     );
 
  CREATE TABLE songs (
-   id SERIAL PRIMARY KEY,
+   song_id SERIAL PRIMARY KEY,
    song_title VARCHAR(255),
    mood INT,
    tempo INT,
@@ -13,10 +13,10 @@ CREATE TABLE artists (
    link VARCHAR (255)
 );
 
-CREATE TABLE join (
-Id SERIAL PRIMARY KEY,
-artistID INT REFERENCES artists(id),
-songID INT REFERENCES songs(id)
+CREATE TABLE joins (
+join_id SERIAL PRIMARY KEY,
+artist_id INT REFERENCES artists(artist_id),
+song_id INT REFERENCES songs(song_id)
 );
 
  INSERT INTO artists(artist_name)
