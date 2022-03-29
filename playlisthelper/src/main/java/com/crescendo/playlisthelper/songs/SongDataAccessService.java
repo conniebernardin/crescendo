@@ -5,6 +5,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Locale;
 
 
 @Repository("songdb")
@@ -21,8 +22,8 @@ public class SongDataAccessService implements SongDao {
                 rs.getString("song_title"),
                 rs.getInt("mood"),
                 rs.getInt("tempo"),
-                SongGenre.valueOf(rs.getString("genre")),
-                SongLanguage.valueOf(rs.getString("language")),
+                SongGenre.valueOf(rs.getString("genre").toUpperCase()),
+                SongLanguage.valueOf(rs.getString("language").toUpperCase()),
                 rs.getString("link"),
                 rs.getInt("length"));
 
@@ -33,7 +34,7 @@ public class SongDataAccessService implements SongDao {
     public List<Songs> getAllSongs() {
         String sql = """
                 
-                SELECT song_id, song_title, mood, genre, language, link, length
+                SELECT song_id, song_title, mood, tempo, genre, language, link, length
                 FROM songs
                 
                 """;
