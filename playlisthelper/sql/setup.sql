@@ -60,15 +60,13 @@ INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('The Cave', 3, 142, 'folk', 'english',  'https://www.youtube.com/embed/fNy8llTLvuA', 275 );
 
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
- VALUES ('Rainbow', 5, 130, 'folk', 'american',  'https://www.youtube.com/watch?v=6OFv566mj7s&ab_channel=KaceyMusgravesVEVO', 214);
+ VALUES ('Rainbow', 5, 130, 'folk', 'american',  'https://www.youtube.com/embed/6OFv566mj7s', 214);
 
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('Butterflies', 6, 142, 'folk', 'american', 'https://www.youtube.com/embed/BM5Xa1FvNQQ', 219);
-
 
 INSERT INTO joins (artist_id, song_id) VALUES (1, 1);
 INSERT INTO joins (artist_id, song_id) VALUES (1, 2);
 INSERT INTO joins (artist_id, song_id) VALUES (1, 3);
 INSERT INTO joins (artist_id, song_id) VALUES (2, 4);
 INSERT INTO joins (artist_id, song_id) VALUES (2, 5);
-
