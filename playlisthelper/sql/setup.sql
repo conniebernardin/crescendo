@@ -1,3 +1,7 @@
+DROP TABLE artists;
+DROP TABLE songs;
+DROP TABLE joins;
+
 CREATE TABLE artists (
     artist_id SERIAL PRIMARY KEY,
     artist_name VARCHAR(255)
