@@ -7,23 +7,27 @@ import HomePage from './Pages/HomePage';
 function App() {
     
     const [songs, setSongs] = useState([]);
-    const [loading, setLoading] = useState(true);
-
 
     useEffect(()=>{ 
         fetch("http://localhost:8080/joins/alljoin")
         .then(response => response.json())
-        .then(data => console.log(data))
         .then(data => setSongs(data))
-        .then(console.log(songs))
-        .then(setLoading(false))
     },[])
+
+    useEffect(() => {
+        console.log("Hello: " + songs)
+    }, [songs])
+
+    const [mood, setMood] = useState(5);
+    const [tempo, setTempo] = useState(100);
+    const [length, setLength] = useState(2);
+    const [playList, setPlayList] = useState(songs);
 
  
   return(
   <>
   <h1>hiyaaaa</h1>
-  {loading ? <h2>Not loaded</h2> : <h2>Has loaded</h2>}
+  {songs.length === 1 ? <h2>Not loaded</h2> : <h2>Has loaded</h2>}
   <Router>
       <Routes>
           <Route exact path= "/" element={<HomePage />} />
