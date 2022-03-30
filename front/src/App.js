@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PlaylistPage from './Pages/PlaylistPage';
+import HomePage from './Pages/HomePage';
 
 function App() {
 
@@ -26,5 +27,7 @@ useEffect(()=>{ fetch("http://localhost:8080/joins/alljoin")
   </>)
   
 }
+
+
 
 export default App;
