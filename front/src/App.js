@@ -5,7 +5,11 @@ import PlaylistPage from './Pages/PlaylistPage';
 import HomePage from './Pages/HomePage';
 
 function App() {
-    
+   
+    const moodFilter = () => {
+        
+    }
+
     const [songs, setSongs] = useState([]);
 
     useEffect(()=>{ 

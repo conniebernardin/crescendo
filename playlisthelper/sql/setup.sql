@@ -96,7 +96,7 @@ INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('Providence', 2, 105, 'folk', 'english', 'https://www.youtube.com/embed/n9Z98wrRnmw', 183);
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
- VALUES ('Hell''s Comin'' with Me', 3, 235, 'folk', 'english', 'https://www.youtube.com/embed/bTHN1eWN7iU', 235);
+ VALUES ('Hell''s Comin'' with Me', 3, 135, 'folk', 'english', 'https://www.youtube.com/embed/bTHN1eWN7iU', 235);
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('Sleep is for the Weak', 6, 142, 'folk', 'english', 'https://www.youtube.com/embed/VRj3LsX54ys', 191);
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
