@@ -1,11 +1,12 @@
 import React from "react"
-import SliderComponent from "../Components/SliderComponent"
+import SliderContainer from "../Containers/SliderContainer";
+
 
 const HomePage = () => {
 
     return (
         <div>
-        <SliderComponent
+        <SliderContainer
         />
         </div>
     )
