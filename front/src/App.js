@@ -87,7 +87,7 @@ function App() {
 
     const [mood, setMood] = useState(5);
     const [tempo, setTempo] = useState(100);
-    const [length, setLength] = useState(2);
+    const [length, setLength] = useState(10);
     const [playList, setPlayList] = useState(songs);
 
     const moodFilter = () => {
@@ -119,10 +119,31 @@ function App() {
         return tempoFilteredSongs;
     }
 
-  const listFiltered = moodFilter()
+
+    const lengthFilter = () => {
+        let totalTime=0;
+        let finalPlaylist=[];
+    
+        for (let index = 0; index < test.length; index++) {
+            totalTime +=test[index]["length"];
+            if (totalTime<length*60) {//just for now
+                finalPlaylist.push(test[index]);
+            }         
+        }
+        return finalPlaylist;
+    }
+
+
+
+  const listFiltered = moodFilter()//get list after mood filter
 
   const tempoFilteredSongs = tempoFilter()
-  console.log("this is tempo filtered: " + tempoFilteredSongs)
+  const lengthFilterSongs=lengthFilter();
+
+  console.log("this is tempo filtered: " + tempoFilteredSongs);
+  console.log("this is length filtered" + lengthFilterSongs);
+  console.log(lengthFilterSongs);
+
   
   return(
   <Router>
@@ -131,6 +152,9 @@ function App() {
         <h1>hiyaaaa</h1>
         {songs.length === 1 ? <h2>Not loaded</h2> : <h2>Has loaded</h2>}
         <p>anything</p>
+
+
+
         <Routes>
           <Route exact path= "/" element={<HomePage listFiltered = {listFiltered} songs = {songs}/>} />
           <Route exact path= "/joinsall" element={<PlaylistPage/>} />
