@@ -40,7 +40,7 @@
 .horizontal-slider {
   width: 100%;
   max-width: 500px;
-  height: 100vh;
+  height: 10vh;
   margin: auto;
 }
 .example-thumb {

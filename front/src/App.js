@@ -100,22 +100,42 @@ function App() {
         );
         console.log("filtered songs log:")
         console.log(filteredSongs)
+        // setPlayList(filteredSongs)
         return filteredSongs;
     }
 
+
+    const tempoFilter = () => {
+        
+        const tempoLowerBound = tempo - 10;
+        const tempoUpperBound = tempo + 10;
+        let tempoFilteredSongs = listFiltered.filter(song => {
+        return (tempoLowerBound <= song.tempo && song.tempo <= tempoUpperBound)
+        }
+        );
+        console.log("filtered songs log:")
+        console.log(tempoFilteredSongs)
+        // setPlayList(filteredSongs)
+        return tempoFilteredSongs;
+    }
+
   const listFiltered = moodFilter()
+
+  const tempoFilteredSongs = tempoFilter()
+  console.log("this is tempo filtered: " + tempoFilteredSongs)
+  
   return(
   <Router>
-      <div className="app">
+       <div className="app">
       {listFiltered!== undefined ? <p>{listFiltered[0].artistName}</p> : <p>not defined</p> }
         <h1>hiyaaaa</h1>
         {songs.length === 1 ? <h2>Not loaded</h2> : <h2>Has loaded</h2>}
         <p>anything</p>
         <Routes>
-          <Route exact path= "/" element={<HomePage />} />
+          <Route exact path= "/" element={<HomePage listFiltered = {listFiltered} songs = {songs}/>} />
           <Route exact path= "/joinsall" element={<PlaylistPage/>} />
         </Routes>
-        
+       
       </div>
   
   </Router>

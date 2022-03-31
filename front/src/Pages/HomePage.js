@@ -4,10 +4,10 @@ import SliderComponent from "../Components/SliderComponent"
 const HomePage = () => {
 
     return (
+        <div>
         <SliderComponent
-        
-        
         />
+        </div>
     )
 
 
