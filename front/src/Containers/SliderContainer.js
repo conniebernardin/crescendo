@@ -1,20 +1,28 @@
 import { useState } from "react"
 import ReactSlider from "react-slider";
 
-const SliderContainer = () => {
+const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}) => {
     
     const [moodSliderValue, setMoodSliderValue] = useState (5)
     const [tempoSliderValue, setTempoSliderValue] = useState (100)
     const [lengthSliderValue, setLengthSliderValue] = useState (5)
    
     const onMoodSlide = (event) => {
-       setMoodSliderValue(event)
+        setMoodSliderValue(event)
     }
     const onTempoSlide = (event) => {
         setTempoSliderValue(event)
      }
      const onLengthSlide = (event) => {
         setLengthSliderValue(event)
+     }
+
+     const handleFormSubmit = () => { 
+        setMood(moodSliderValue)
+        setTempo(tempoSliderValue)
+        setLength(lengthSliderValue)
+        
+        setPlaylist(songFilter())
      }
 
     return(
@@ -54,6 +62,8 @@ const SliderContainer = () => {
             trackClassName="example-track"
             renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
         />
+
+        <button onClick={handleFormSubmit}>Submit</button>
 
 </>
     )
