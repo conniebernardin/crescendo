@@ -85,16 +85,17 @@ function App() {
         console.log("Hello: " + songs)
     }, [songs])
 
-    const [mood, setMood] = useState(2);
+    const [mood, setMood] = useState(5);
     const [tempo, setTempo] = useState(100);
     const [length, setLength] = useState(2);
     const [playList, setPlayList] = useState(songs);
 
     const moodFilter = () => {
-        
         console.log("this is mood: " + mood);
-        let filteredSongs = songs.filter(songs => {
-        return (songs.mood === mood || songs.mood === mood +1 || songs.mood === mood -1)
+        const moodLowerBound = mood - 1;
+        const moodUpperBound = mood + 1;
+        let filteredSongs = test.filter(song => {
+        return (moodLowerBound <= song.mood && song.mood <= moodUpperBound)
         }
         );
         console.log("filtered songs log:")
@@ -103,21 +104,22 @@ function App() {
     }
 
   const listFiltered = moodFilter()
-
   return(
-  <>
-    {/* {listFiltered!== undefined ? <p>{listFiltered[0].artistName}</p> : <p>not defined</p> } */}
-  <h1>hiyaaaa</h1>
-  {songs.length === 1 ? <h2>Not loaded</h2> : <h2>Has loaded</h2>}
-  <p>anything</p>
   <Router>
-      <Routes>
+      <div className="app">
+      {listFiltered!== undefined ? <p>{listFiltered[0].artistName}</p> : <p>not defined</p> }
+        <h1>hiyaaaa</h1>
+        {songs.length === 1 ? <h2>Not loaded</h2> : <h2>Has loaded</h2>}
+        <p>anything</p>
+        <Routes>
           <Route exact path= "/" element={<HomePage />} />
           <Route exact path= "/joinsall" element={<PlaylistPage/>} />
-      </Routes>
-  </Router>
+        </Routes>
+        
+      </div>
   
-  </>)
+  </Router>
+  )
   
 }
 
