@@ -1,6 +1,6 @@
 import FinalPlaylistContainer from "../Containers/FinalPlaylistContainer";
 import { Link } from 'react-router-dom'
-
+import VideoPlayer from "../Components/VideoPlayer";
 const PlaylistPage = ({finalPlaylist}) => {
     return(
         <>
@@ -17,6 +17,8 @@ const PlaylistPage = ({finalPlaylist}) => {
        <Link to= "/" className='homepage-btn'>
     <button>Home Page</button>
     </Link>
+    <VideoPlayer playlist={finalPlaylist}/>
+
        </>
 
     )
