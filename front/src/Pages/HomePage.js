@@ -5,7 +5,7 @@ import SliderContainer from "../Containers/SliderContainer";
 const HomePage = ({setMood, setTempo, setLength, songFilter, setPlaylist}) => {
 
     return (
-        <div>
+        <div className="slider-container">
         <SliderContainer 
         setMood={setMood} 
         setLength={setLength} 

@@ -1,6 +1,20 @@
+:root{
+  --slider-color: rgba(24, 148, 131, 0.4)
+}
+
+*{
+  margin: 0%;
+  border:2px solid white ;
+}
+
 .app{
-  height: 100vh;
-background-color: black;
+height: 100vh;
+background-color:rgba(24, 148, 131, 0.4);
+}
+
+.slider-container{
+  text-align: center;
+  padding-top: 10rem;
 }
 
 .horizontal-slider {
@@ -13,14 +27,14 @@ background-color: black;
   cursor: pointer;
   position:relative;
   z-index: 100;
-  background: #1db954;
-  border: 5px solid #1db954;
+  background: var(--slider-color);
+  border: 5px solid rgba(24, 148, 131, 0.9);
   border-radius: 100%;
   display: block;
-  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+  box-shadow: 0 0 2px 0 var(--slider-color);
 }
 .example-thumb.active {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--slider-color);
 }
 .example-track {
   position: relative;
@@ -28,7 +42,7 @@ background-color: black;
   border-radius: 1rem;
 }
 .example-track.example-track-0 {
-  background: #1db954;
+  background: var(--slider-color);
 }
 .horizontal-slider .example-track {
   top: 20px;
@@ -52,6 +66,7 @@ p{
 
 .heading{
   color: white;
+  text-align: center;
 }
 
 body{

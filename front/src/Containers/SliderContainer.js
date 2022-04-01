@@ -23,8 +23,8 @@ const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}
         <ReactSlider
             onChange= {onMoodSlide}
             className="horizontal-slider"
-            marks
-            markClassName="example-mark"
+            // marks
+            // markClassName="example-mark"
             min={1}
             max={10}
             thumbClassName="example-thumb"
@@ -35,8 +35,8 @@ const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}
         <ReactSlider
             onChange= {onTempoSlide}
             className="horizontal-slider"
-            marks
-            markClassName="example-mark"
+            // marks
+            // markClassName="example-mark"
             min={60}
             max={150}
             thumbClassName="example-thumb"
@@ -47,8 +47,8 @@ const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}
         <ReactSlider
             onChange= {onLengthSlide}
             className="horizontal-slider"
-            marks
-            markClassName="example-mark"
+            // marks
+            // markClassName="example-mark"
             min={1}
             max={10}
             thumbClassName="example-thumb"
