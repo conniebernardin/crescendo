@@ -125,7 +125,7 @@ function App() {
           setTempo={setTempo} 
           songFilter={songFilter}
           setPlaylist={setPlaylist}/>} />
-          <Route exact path= "/joinsall" element={<PlaylistPage/>} />
+          <Route exact path= "/joinsall" element={<PlaylistPage finalPlaylist = {playList}/>} />
         </Routes>
        
       </div>
