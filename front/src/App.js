@@ -26,12 +26,14 @@ function App() {
 
 
     const songFilter = () => {
+        console.log("this is the mood" + mood)
         const moodLowerBound = mood - 1;
         const moodUpperBound = mood + 1;
         let moodFilteredSongs = songs.filter(song => {
         return (moodLowerBound <= song.mood && song.mood <= moodUpperBound)
         }
         );
+        console.log("this is tempo" + tempo)
         const tempoLowerBound = tempo - 15;
         const tempoUpperBound = tempo + 15;
         let tempoFilteredSongs = moodFilteredSongs.filter(song => {
@@ -47,6 +49,7 @@ function App() {
                 finalPlaylist.push(tempoFilteredSongs[index]);
             }         
         }
+        console.log("this is lenght" + length)
         return finalPlaylist;
     }
 

@@ -18,7 +18,8 @@ const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}
      }
 
      const handleFormSubmit = () => { 
-        setMood(moodSliderValue)
+        
+        setMood(onMoodSlide(setMood))
         setTempo(tempoSliderValue)
         setLength(lengthSliderValue)
         
