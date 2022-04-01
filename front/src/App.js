@@ -107,8 +107,8 @@ function App() {
   <Router>
        <div className= "app">
       {/* {listFiltered!== undefined ? <p>{listFiltered[0].artistName}</p> : <p>not defined</p> } */}
-        <h1>hiyaaaa</h1>
-        {songs.length === 1 ? <h2>Not loaded</h2> : <h2>Has loaded</h2>}
+        <h1 className='heading'>hiyaaaa</h1>
+        {songs.length === 1 ? <h2 className='loading'>Not loaded</h2> : <h2 className='loading'>Has loaded</h2>}
         <p>anything</p>
 
 
