@@ -2,8 +2,8 @@ import SongCard from "../Components/SongCard";
 
 
 const FinalPlaylistContainer = ({finalPlaylist}) => {
-    const newSongCard = finalPlaylist.map(song => { 
-        return <SongCard song={song}/>
+    const newSongCard = finalPlaylist.map((song, index) => { 
+        return <SongCard song={song} key={index}/>
 
     })
 

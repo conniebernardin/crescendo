@@ -1,5 +1,6 @@
 import { useState } from "react"
 import ReactSlider from "react-slider";
+import { Link } from 'react-router-dom'
 
 const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}) => {
 
@@ -54,9 +55,11 @@ const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}
             trackClassName="example-track"
             renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
         />
-
-        <button onClick={handleFormSubmit}>Submit</button>
-
+  
+    <Link to= "/joinsall" className='playlistpage-btn'>
+    <button onClick={handleFormSubmit}>Submit</button>
+    </Link>
+       
 </>
     )
 

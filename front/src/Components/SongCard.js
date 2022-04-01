@@ -1,15 +1,16 @@
 
-const SongCard = ({song}) => {
+const SongCard = ({song, index}) => {
 
     return ( 
         <article>
-            <h3>
+            <div>
+                <h1>
+                {song.songId}
+                {song.songTitle}
+                </h1>
 
-                {song.id}
 
-
-
-            </h3>
+            </div>
 
         </article>
 
