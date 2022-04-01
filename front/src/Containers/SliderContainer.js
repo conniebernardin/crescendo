@@ -2,28 +2,19 @@ import { useState } from "react"
 import ReactSlider from "react-slider";
 
 const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}) => {
-    
-    const [moodSliderValue, setMoodSliderValue] = useState (5)
-    const [tempoSliderValue, setTempoSliderValue] = useState (100)
-    const [lengthSliderValue, setLengthSliderValue] = useState (5)
-   
+
     const onMoodSlide = (event) => {
-        setMoodSliderValue(event)
+        setMood(event)
     }
     const onTempoSlide = (event) => {
-        setTempoSliderValue(event)
+        setTempo(event)
      }
      const onLengthSlide = (event) => {
-        setLengthSliderValue(event)
+        setLength(event)
      }
 
-     const handleFormSubmit = () => { 
-        
-        setMood(onMoodSlide(setMood))
-        setTempo(tempoSliderValue)
-        setLength(lengthSliderValue)
-        
-        setPlaylist(songFilter())
+     const handleFormSubmit = async (event) => { 
+        setPlaylist(songFilter());
      }
 
     return(
