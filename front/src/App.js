@@ -33,8 +33,8 @@ function App() {
         }
         );
         console.log("this is tempo" + tempo)
-        const tempoLowerBound = tempo - 15;
-        const tempoUpperBound = tempo + 15;
+        const tempoLowerBound = tempo - 20;
+        const tempoUpperBound = tempo + 20;
         let tempoFilteredSongs = moodFilteredSongs.filter(song => {
         return (tempoLowerBound <= song.tempo && song.tempo <= tempoUpperBound)
         }
