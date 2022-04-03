@@ -10,7 +10,7 @@ function App() {
     const [songs, setSongs] = useState([]);
 
     useEffect(()=>{ 
-        fetch("http://localhost:8080/joins/alljoin")
+        fetch("http://localhost:8080/joins/shuffledlist")
         .then(response => response.json())
         .then(data => setSongs(data))
     },[])
@@ -21,9 +21,8 @@ function App() {
 
     const [mood, setMood] = useState(5);
     const [tempo, setTempo] = useState(100);
-    const [length, setLength] = useState(10);
+    const [length, setLength] = useState(60);
     const [playList, setPlaylist] = useState(songs);
-
 
     const songFilter = () => {
         console.log("this is the mood" + mood)

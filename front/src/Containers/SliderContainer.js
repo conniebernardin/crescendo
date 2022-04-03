@@ -38,7 +38,7 @@ const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}
             // marks
             // markClassName="example-mark"
             min={60}
-            max={150}
+            max={160}
             thumbClassName="example-thumb"
             trackClassName="example-track"
             renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
@@ -50,7 +50,7 @@ const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}
             // marks
             // markClassName="example-mark"
             min={1}
-            max={10}
+            max={60}
             thumbClassName="example-thumb"
             trackClassName="example-track"
             renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
