@@ -2,15 +2,16 @@ import React from 'react'
 import ReactPlayer from 'react-player/youtube'
 import { useState, useEffect} from 'react'
 
-const VideoPlayer=({playlist})=>{
+const VideoPlayer=({playlist, songUrl, songIndex, handleEndSong})=>{
    
-    setTimeout(()=>{console.log(playlist)},2000);
 
+    setTimeout(()=>{console.log(playlist)},2000);
+    
 
     
 
-    const [songUrl, setSongUrl]= useState(playlist[0].link);
-    const [songIndex,setSongIndex]=useState(0);
+    // const [songUrl, setSongUrl]= useState(playlist[0].link);
+    // const [songIndex,setSongIndex]=useState(0);
 
     // if (playlist[0]!== undefined) {
     //     useState(playlist[0].link);
@@ -19,11 +20,12 @@ const VideoPlayer=({playlist})=>{
 
 
 
-    const handleEndSong=()=>{
-        setSongUrl(playlist[songIndex+1].link)
-        setSongIndex(songIndex+1)
-        
-    }
+    // const handleEndSong=()=>{
+    //     setSongUrl(playlist[songIndex+1].link)
+    //     setSongIndex(songIndex+1)
+    //     console.log("song ended")
+
+    // }
 
 
     return (
