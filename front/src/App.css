@@ -19,15 +19,32 @@
 
 .app{
 height: 100vh;
-background-color:var(--primary-color);
+background-color: var(--primary-color);
+
+/* background-color: #ff94b960;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='250' height='30' patternUnits='userSpaceOnUse' patternTransform='scale(4.61)'%3E%3Cpath id='a' data-color='outline' fill='none' stroke='%23FFF' stroke-width='5' d='M-62.5-15C-31.3-15 0-7.5 0-7.5S31.3 0 62.5 0 125-7.5 125-7.5s31.3-7.5 62.5-7.5S250-7.5 250-7.5 281.3 0 312.5 0'%3E%3C/path%3E%3Cuse xlink:href='%23a' y='15'%3E%3C/use%3E%3Cuse xlink:href='%23a' y='30'%3E%3C/use%3E%3Cuse xlink:href='%23a' y='45'%3E%3C/use%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat; */
+
+
 }
 
-.slider-container{
-  text-align: center;
-  padding: 5rem 0rem 5rem;
+.homepage-card{
+  background-color: var(--primary-color);
+  /* padding: 5rem 0rem 5rem; */
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  height: 100vh;
+  /* box-shadow: 0 0 30px 20px #cb88ff67; */
+}
+
+.slider-container{
+ padding-top: 5rem;
+
+  
 }
 
 .horizontal-slider {
@@ -123,3 +140,51 @@ button, .submit-btn{
   width: 4rem;
   font-size: 40px;
 }
+
+/* body {
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.wave,
+.wave::before,
+.wave::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250vw;
+  height: 250vw;
+  margin-left: -125vw;
+  transform-origin: 50% 50%;
+  background-color: transparent;
+  border-radius: 38% 42%;
+  box-shadow: inset 0 0 10vw rgba(255,0,255,0.8);
+  animation: spin 16s infinite linear;
+  mix-blend-mode: multiply;
+}
+
+.wave::before {
+  width: 105%;
+  height: 95%;
+  margin-top: -125vw;
+  transform-origin: 49% 51%;
+  border-radius: 40% 38%;
+  box-shadow: inset 0 0 10vw rgba(255,255,0,0.8);
+  animation: spin 13s infinite linear;
+}
+
+.wave::after {
+  width: 102%;
+  height: 98%;
+  margin-top: -125vw;
+  transform-origin: 51% 49%;
+  border-radius: 48% 42%;
+  box-shadow: inset 0 0 10vw rgba(0,255,255,0.8);
+  animation: spin 10s infinite linear;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+} */

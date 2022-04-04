@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PlaylistPage from './Pages/PlaylistPage';
 import HomePage from './Pages/HomePage';
-import CrescendoLogo from './images/CrescendoLogo.png'
+
 
 function App() {
 
@@ -110,7 +110,7 @@ function App() {
   <Router>
        <div className= "app">
       {/* {listFiltered!== undefined ? <p>{listFiltered[0].artistName}</p> : <p>not defined</p> } */}
-      <img src = {CrescendoLogo} alt = "Pink and blue crescendo logo" className='logo'></img>
+    
         {/* <h1 className='heading'>crescendo</h1> */}
         {/* {songs.length === 1 ? <h2 className='loading'>Not loaded</h2> : <h2 className='loading'>Has loaded</h2>}
         <p>anything</p> */}
