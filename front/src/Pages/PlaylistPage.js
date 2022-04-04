@@ -28,7 +28,7 @@ const PlaylistPage = ({finalPlaylist}) => {
 
         <div className="playlist-container">
        <FinalPlaylistContainer 
-       finalPlaylist={finalPlaylist} songIndex={songIndex}
+       finalPlaylist={finalPlaylist} songIndex={songIndex} setSongIndex={setSongIndex} setSongUrl={setSongUrl}
        />
        </div>
 

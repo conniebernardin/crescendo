@@ -1,9 +1,13 @@
 import { useState } from "react";
 
 
-const SongCard = ({song, songIndex, songCardIndex}) => {
+const SongCard = ({song, songIndex, songCardIndex, setSongIndex, setSongUrl}) => {
 
+const handleButtonClick = ()=> {
+    setSongIndex(songCardIndex)
+    setSongUrl(song.link)
 
+}
     
     return ( 
         <section className="song-container">
@@ -16,6 +20,7 @@ const SongCard = ({song, songIndex, songCardIndex}) => {
                     <h1 className="artist-name"> {song.artistName}</h1>
 
                     <h1 className="artist-name">{song.index}</h1>
+                    <button onClick = {handleButtonClick}>&#9658;</button>
                 </div>
 
 
