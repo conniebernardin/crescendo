@@ -23,6 +23,10 @@ public class JoinController {
     public List<Joins> allSongs(){
         return joinService.getAllJoins();
     }
+    @GetMapping(path = "shuffledlist")
+    public List<Joins> allShuffledSongs(){
+        return joinService.getAllShuffledJoins();
+    }
 
 
 

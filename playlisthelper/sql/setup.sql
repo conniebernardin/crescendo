@@ -112,7 +112,7 @@ INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('The Bard''s Song (In the Forest)', 4, 82, 'metal', 'english', 'https://www.youtube.com/embed/n63UbX5kzAc', 208);
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
- VALUES ('Mirror Mirror', 2, 159, 'metal', 'english', 'https://www.youtube.com/embed/CNGCvI9dpZY', 306);
+ VALUES ('Mirror Mirror', 2, 178, 'metal', 'english', 'https://www.youtube.com/embed/CNGCvI9dpZY', 306);
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('Valkyries', 2, 144, 'metal', 'english', 'https://www.youtube.com/embed/WoH6JWm7nfQ', 394);
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)

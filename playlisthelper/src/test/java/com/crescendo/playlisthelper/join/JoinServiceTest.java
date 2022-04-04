@@ -15,9 +15,10 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 
 
-public class JoinService {
+public class JoinServiceTest {
     private JoinService underTest;
     private JoinDao joinDao;
+
 
     @BeforeEach
     void setUp(){
@@ -26,7 +27,7 @@ public class JoinService {
     }
 
     @Test
-    void canReturnAllSongs(){
+    void canReturnAllJoins(){
         // Given
         List<Joins> testJoins = new ArrayList<>();
         Joins testJoins1 = new Joins(1,"Butterflies", 5, 120, SongLanguage.ENGLISH,
@@ -39,9 +40,9 @@ public class JoinService {
         testJoins.add(testJoins2);
         given(joinDao.getAllJoin()).willReturn(testJoins);
         // When
-        List<Songs> expected = underTest.getAllSongs();
+        List<Joins> expected = underTest.getAllJoins();
         // Then
-        List<Songs> actual = testSongs;
+        List<Joins> actual = testJoins;
         assertThat(expected).isEqualTo(actual);
     }
 }

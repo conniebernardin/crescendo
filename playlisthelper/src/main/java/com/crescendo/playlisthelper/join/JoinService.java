@@ -5,6 +5,7 @@ import com.crescendo.playlisthelper.songs.Songs;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -18,6 +19,12 @@ public class JoinService {
 
     public List<Joins> getAllJoins (){
         List <Joins> allJoins = joinDao.getAllJoin();
+        return allJoins;
+    }
+
+    public List<Joins> getAllShuffledJoins (){
+        List<Joins> allJoins = joinDao.getAllJoin();
+        Collections.shuffle(allJoins);
         return allJoins;
     }
 }
