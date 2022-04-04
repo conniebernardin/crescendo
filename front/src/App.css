@@ -1,3 +1,5 @@
+/* @import url(//db.onlinewebfonts.com/c/a919779c7bf67165eaeaa5375be6fe90?family=Genty+Demo); */
+
 :root{
   --slider-color: rgba(24, 148, 131, 0.4);
   --primary-color: #ff94b9;
@@ -11,55 +13,67 @@
 
 *{
   margin: 0%;
-  border:2px solid white ;
+  /* border:2px solid white ; */
+  font-family: 'Zoika Font', sans-serif;
 }
 
 .app{
 height: 100vh;
-background-color:rgba(24, 148, 131, 0.4);
+background-color:var(--primary-color);
 }
 
 .slider-container{
   text-align: center;
-  padding-top: 10rem;
+  padding: 5rem 0rem 5rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .horizontal-slider {
   width: 100%;
-  max-width: 500px;
-  height: 5vh;
-  margin: auto;
+  max-width: 1000px;
+  height: 10vh;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .example-thumb {
   cursor: pointer;
   position:relative;
   z-index: 100;
-  background: var(--slider-color);
-  border: 5px solid rgba(24, 148, 131, 0.9);
+  background: var(--accent2-color);
+  border: 5px solid var(--accent2-color);
   border-radius: 100%;
   display: block;
   box-shadow: 0 0 2px 0 var(--slider-color);
 }
-.example-thumb.active {
-  background-color: var(--slider-color);
-}
-.example-track {
+
+.example-track1, .example-track2, .example-track3 {
   position: relative;
   background: white;
-  border-radius: 1rem;
+  border-radius: 4rem;
 }
-.example-track.example-track-0 {
-  background: var(--slider-color);
+.example-track1.example-track1-0, .example-track3.example-track3-0 {
+  background: var(--accent5-color);
 }
-.horizontal-slider .example-track {
+
+.example-track2.example-track2-0{
+  background: var(--secondary-color);
+}
+
+.example-track3.example-track3-0{
+  background: var(--accent4-color);
+}
+
+.horizontal-slider .example-track1, .example-track2, .example-track3 {
   top: 20px;
-  height: 16px;
+  height: 40px;
 }
 .horizontal-slider .example-thumb {
-  top: 20px;
-  width: 10px;
+  top: 14px;
+  width: 40px;
   outline: none;
-  height: 10px;
+  height: 40px;
   line-height: 38px;
 }
 
@@ -82,4 +96,30 @@ body{
 }
 .thumb-value{
   margin: 2rem;
+}
+
+.logo{
+  display: block;
+  height: 20rem;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+padding: 0.75rem 1rem;
+font-size: 1rem;
+border-radius: 0.8rem;
+border: none;
+justify-items: space-between;
+cursor: pointer;
+background-color: var(--accent3-color);
+color: white;
+}
+
+button, .submit-btn{
+  background-color: var(--accent2-color);
+  height: 4rem;
+  width: 4rem;
+  font-size: 40px;
 }
