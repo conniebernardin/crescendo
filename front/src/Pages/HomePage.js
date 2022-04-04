@@ -1,14 +1,20 @@
 import React from "react"
 import SliderContainer from "../Containers/SliderContainer";
 import CrescendoLogo from '../images/CrescendoLogo.png'
+import { Link } from "react-router-dom";
 
 
 const HomePage = ({setMood, setTempo, setLength, songFilter, setPlaylist}) => {
 
     return (
         <>
+        <div className="homepage-card">
+        <Link to="/" className='homepage-btn'>
+                 <img src={CrescendoLogo} alt="Pink and blue crescendo logo" className='logo'></img>
 
-        <h1 className='heading'>crescendo</h1>
+        </Link>
+
+       
         <div className="slider-container">
         
         <SliderContainer 
@@ -19,6 +25,7 @@ const HomePage = ({setMood, setTempo, setLength, songFilter, setPlaylist}) => {
         setPlaylist={setPlaylist}
         />
 
+        </div>
         </div>
         </>
     )
