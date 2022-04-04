@@ -76,7 +76,6 @@ INSERT INTO joins (artist_id, song_id) VALUES (1, 3);
 INSERT INTO joins (artist_id, song_id) VALUES (2, 4);
 INSERT INTO joins (artist_id, song_id) VALUES (2, 5);
 
-<!-- Additional songs/artists 1-->
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('Hoist up the Thing', 7, 116, 'folk', 'english', 'https://www.youtube.com/embed/nO5v2YKpJQc', 180);
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
@@ -151,3 +150,17 @@ INSERT INTO joins (artist_id, song_id) VALUES (16, 22);
 INSERT INTO joins (artist_id, song_id) VALUES (16, 23);
 INSERT INTO joins (artist_id, song_id) VALUES (16, 24);
 INSERT INTO joins (artist_id, song_id) VALUES (16, 25);
+
+INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
+ VALUES ('Death of the Cog', 2, 172, 'indie', 'english', 'https://www.youtube.com/watch?v=tq7XG4XOJsc', 161);
+INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
+ VALUES ('Burn It Down', 1, 90, 'rock', 'english', 'https://www.youtube.com/watch?v=_ckCo80imFo', 206);
+INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
+ VALUES ('Polka Never Dies', 7, 145, 'folk', 'english', 'https://www.youtube.com/watch?v=wGI6x7mNK4o', 167);
+
+INSERT INTO artists(artist_name)
+VALUES ('The Cog is Dead');
+
+INSERT INTO joins (artist_id, song_id) VALUES (17, 26);
+INSERT INTO joins (artist_id, song_id) VALUES (17, 27);
+INSERT INTO joins (artist_id, song_id) VALUES (14, 28);

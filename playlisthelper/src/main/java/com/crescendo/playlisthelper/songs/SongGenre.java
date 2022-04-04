@@ -7,7 +7,8 @@ public enum SongGenre {
     AFROBEATS,
     FOLK,
     NEOSOUL,
-    METAL
+    METAL,
+    ROCK
 
 
 }
