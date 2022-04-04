@@ -1,17 +1,19 @@
 const SongCard = ({song, index}) => {
 
     return ( 
-        <article>
-            <div>
-                <h1>
-                {song.songId}
-                {song.songTitle}
-                </h1>
+        <section className="song-container">
+            <article className="song-card">
+
+                <div className="song">
+                    <h1 className="song-title"> {song.songTitle} </h1>
+
+                    <h1 className="artist-name"> {song.artistName}</h1>
+                </div>
 
 
-            </div>
+            </article>
 
-        </article>
+        </section>
 
 
     )

@@ -188,3 +188,38 @@ button, .submit-btn{
 @keyframes spin {
   100% { transform: rotate(360deg); }
 } */
+
+
+.playlist-page{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 6rem 
+}
+
+.playlist-container{
+  display: flex;
+  flex-direction: column;
+background-color: var(--accent3-color);
+border-radius: 2rem;
+box-shadow: 0 0 12px 4px #8231c057;
+}
+
+.video-container{
+  box-shadow: 0 0 12px 4px #8231c057;
+}
+
+
+.song{
+  width: 30vw;
+padding: 1rem;
+}
+
+.song-title{
+  font-size: 30px;
+}
+
+.artist-name{
+  font-size: 20px;
+}

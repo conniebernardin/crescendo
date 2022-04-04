@@ -10,10 +10,6 @@ const FinalPlaylistContainer = ({finalPlaylist}) => {
 
     return (
         <>
-        <p> 
-            hello world, final playlist 
-
-        </p>
 
         {newSongCard}
 

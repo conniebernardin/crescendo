@@ -1,24 +1,31 @@
 import FinalPlaylistContainer from "../Containers/FinalPlaylistContainer";
 import { Link } from 'react-router-dom'
 import VideoPlayer from "../Components/VideoPlayer";
+import CrescendoLogo from '../images/CrescendoLogo.png'
+
 const PlaylistPage = ({finalPlaylist}) => {
     return(
         <>
+           <Link to= "/" className='homepage-btn'>
+       <img src = {CrescendoLogo} alt = "Pink and blue crescendo logo" className='logo'></img>
 
+    </Link>
+        <div className="playlist-page">
+
+        <div className="playlist-container">
        <FinalPlaylistContainer 
        finalPlaylist={finalPlaylist}
        />
+       </div>
 
-       <h3>
-           this is my playlist page
+    
 
+        <div className="video-container">
+    <VideoPlayer playlist={finalPlaylist} className='video-player'/>
+    </div>
 
-       </h3>
-       <Link to= "/" className='homepage-btn'>
-    <button>Home Page</button>
-    </Link>
-    <VideoPlayer playlist={finalPlaylist}/>
-
+       </div>
+       
        </>
 
     )
