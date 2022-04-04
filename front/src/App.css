@@ -1,5 +1,12 @@
 :root{
-  --slider-color: rgba(24, 148, 131, 0.4)
+  --slider-color: rgba(24, 148, 131, 0.4);
+  --primary-color: #ff94b9;
+  --secondary-color: #245ce7;
+  --accent1-color: #4c0bd1;
+  --accent2-color: #7900ff;
+  --accent3-color: #cb88ff;
+  --accent4-color: #00c4cc;
+  --accent5-color: #343397;
 }
 
 *{
