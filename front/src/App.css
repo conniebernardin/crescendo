@@ -1,3 +1,4 @@
+
 :root{
   --slider-color: rgba(24, 148, 131, 0.4);
   --primary-color: #ff94b9;
@@ -16,7 +17,7 @@
 
 .app{
 height: 100vh;
-background-color:rgba(24, 148, 131, 0.4);
+background-color: var(--primary-color);
 }
 
 .slider-container{
@@ -72,13 +73,13 @@ p{
 }
 
 .heading{
-  color: white;
+  color: var(--secondary-color);
   text-align: center;
 }
 
 body{
   color: white;
-    font-size: large;
+  font-size: large;
 }
 .thumb-value{
   margin: 2rem;

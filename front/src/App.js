@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PlaylistPage from './Pages/PlaylistPage';
 import HomePage from './Pages/HomePage';
+import LandingPage from './Pages/LandingPage';
 
 function App() {
 
@@ -109,14 +110,15 @@ function App() {
   <Router>
        <div className= "app">
       {/* {listFiltered!== undefined ? <p>{listFiltered[0].artistName}</p> : <p>not defined</p> } */}
-        <h1 className='heading'>crescendo</h1>
-        {songs.length === 1 ? <h2 className='loading'>Not loaded</h2> : <h2 className='loading'>Has loaded</h2>}
-        <p>anything</p>
+        
+        
+        
 
 
 
         <Routes>
-          <Route exact path= "/" element={<HomePage 
+          <Route exact path = "/" element = {<LandingPage/>} />
+          <Route exact path= "/start" element={<HomePage 
         //   listFiltered = {listFiltered} 
           songs = {songs} 
           setMood={setMood} 
