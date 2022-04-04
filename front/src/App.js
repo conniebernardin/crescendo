@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PlaylistPage from './Pages/PlaylistPage';
 import HomePage from './Pages/HomePage';
+import LandingPage from './Pages/LandingPage';
 
 
 function App() {
@@ -118,7 +119,8 @@ function App() {
 
 
         <Routes>
-          <Route exact path= "/" element={<HomePage 
+          <Route exact path = "/" element = {<LandingPage/>} />
+          <Route exact path= "/start" element={<HomePage 
         //   listFiltered = {listFiltered} 
           songs = {songs} 
           setMood={setMood} 

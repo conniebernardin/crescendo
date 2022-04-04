@@ -8,8 +8,7 @@ const HomePage = ({setMood, setTempo, setLength, songFilter, setPlaylist}) => {
     return (
         <>
 
-        <div className="homepage-card">
-        <img src = {CrescendoLogo} alt = "Pink and blue crescendo logo" className='logo'></img>
+        <h1 className='heading'>crescendo</h1>
         <div className="slider-container">
         
         <SliderContainer 
@@ -21,12 +20,6 @@ const HomePage = ({setMood, setTempo, setLength, songFilter, setPlaylist}) => {
         />
 
         </div>
-        <div class="ocean">
-  <div class="wave"></div>
-  <div class="wave"></div>
-    </div>
-
-    </div>
         </>
     )
 
