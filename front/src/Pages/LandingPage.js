@@ -1,12 +1,17 @@
 import Crescendo from '../assets/Crescendo.png';
+import { Link } from "react-router-dom";
 const LandingPage = () => {
 
     return(
         <>
-        <img src={Crescendo}/>
-        <a href='/start'>
-        <btn>Start</btn>
-        </a>
+        <div className="landing-card" >
+      
+        <img className="landing-logo" src={Crescendo}/>
+      
+        <Link to='/start'>
+        <btn className="start-button">Start</btn>
+        </Link>
+        </div>
         
         </>
     )

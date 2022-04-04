@@ -200,14 +200,31 @@ button, .submit-btn{
 .playlist-container{
   display: flex;
   flex-direction: column;
-background-color: var(--accent3-color);
-border-radius: 2rem;
-box-shadow: 0 0 12px 4px #8231c057;
+  border-radius: 2rem;
+  box-shadow: 0 0 12px 4px #8231c057;
+  
+  margin:4px, 4px;
+  padding:4px;
+  background-color: var(--accent3-color);
+  width: 31rem;
+  height: 21rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+            
+
 }
 
 .video-container{
   box-shadow: 0 0 12px 4px #8231c057;
+ 
 }
+
+/* .video-player {
+ height: 100%;
+ width: 100%;
+ min-height: 225px;
+} */
 
 
 .song{
@@ -221,4 +238,28 @@ padding: 1rem;
 
 .artist-name{
   font-size: 20px;
+}
+
+.landing-card{
+  display: flex;
+  align-items: center;
+  
+  flex-direction: column;
+
+  
+}
+
+.landing-logo{
+  margin-top:5rem;
+
+}
+
+/* .start-button{
+  text-decoration: 
+  
+} */
+
+a{
+  text-decoration: none;
+
 }

@@ -29,7 +29,7 @@ const VideoPlayer=({playlist})=>{
     return (
         <>
 
-            {songUrl!==undefined?<ReactPlayer controls = {true} playing={true} onEnded={handleEndSong} url={songUrl} />:<p>playlist is empty</p>}
+            {songUrl !== undefined ? <ReactPlayer className="video-player" controls = {true} playing={true} onEnded={handleEndSong} url={songUrl} />:<p>playlist is empty</p>}
 
         
         </>
