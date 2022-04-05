@@ -296,11 +296,10 @@ a{
 .landing-text{
   width: 50%;
   text-align: justify;
-  padding-top: 2rem;
   padding-bottom: 3rem;
   font-size: 1.3rem;
 }
 
 .intro-text{
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
