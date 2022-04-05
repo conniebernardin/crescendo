@@ -114,12 +114,16 @@ body{
   margin: 2rem;
 }
 
-.logo{
+.logo, .basic-logo{
   display: block;
-  height: 10rem;
+  height: 30%;
   width: 30%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.basic-logo{
+  padding-top: 2rem;
 }
 
 button {
@@ -133,7 +137,7 @@ background-color: var(--accent3-color);
 color: white;
 }
 
-button, .submit-btn{
+button{
   background-color: var(--accent2-color);
   height: 4rem;
   width: 4rem;
@@ -194,7 +198,7 @@ button, .submit-btn{
   /* flex-direction: column; */
   align-items: center;
   justify-content: space-evenly;
-  padding: 2rem 6rem 
+  padding: 4rem 5rem 
 }
 
 .playlist-container{
@@ -230,10 +234,14 @@ button, .submit-btn{
 .song{
   width: 30vw;
 padding: 1rem;
-
+display: flex;
+justify-content: space-between;
+max-width: 28rem;
 }
 
-
+.song-info{
+width: 70%;
+}
 
 .song-title{
   font-size: 30px;
@@ -257,12 +265,21 @@ padding: 1rem;
 
 }
 
-/* .start-button{
-  text-decoration: 
+.start-button{
+font-size: 2rem;
   
-} */
+}
 
 a{
   text-decoration: none;
 
 }
+
+.landing-text{
+  width: 50%;
+  text-align: justify;
+  padding-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+

@@ -1,7 +1,7 @@
 import FinalPlaylistContainer from "../Containers/FinalPlaylistContainer";
 import { Link } from 'react-router-dom'
 import VideoPlayer from "../Components/VideoPlayer";
-import CrescendoLogo from '../images/CrescendoLogo.png'
+import BasicLogo from '../images/BasicLogo.png'
 import { useState } from "react";
 
 
@@ -21,7 +21,7 @@ const PlaylistPage = ({finalPlaylist}) => {
     return(
         <>
            <Link to= "/" className='homepage-btn'>
-       <img src = {CrescendoLogo} alt = "Pink and blue crescendo logo" className='logo'></img>
+       <img src = {BasicLogo} alt = "Pink and blue crescendo logo" className='basic-logo'></img>
 
     </Link>
         <div className="playlist-page">
