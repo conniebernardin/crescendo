@@ -8,7 +8,9 @@ public enum SongGenre {
     FOLK,
     NEOSOUL,
     METAL,
-    ROCK
+    ROCK,
+    POP
+
 
 
 }
