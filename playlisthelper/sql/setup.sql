@@ -210,6 +210,8 @@ INSERT INTO artists(artist_name)
 INSERT INTO artists(artist_name)
  VALUES ('Lay Zhang');
 
+//end at 32
+
 
 
 
@@ -285,7 +287,7 @@ INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
 
 
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
- VALUES ('lonely christmas', 2, 117, 'pop', 'chinese', 'https://www.youtube.com/watch?v=RJbmHG4pXuA&ab_channel=%E8%8B%B1%E7%9A%87%E5%A8%9B%E6%A8%82eegmusic', 281);
+ VALUES ('Lonely christmas', 2, 117, 'pop', 'chinese', 'https://www.youtube.com/watch?v=RJbmHG4pXuA&ab_channel=%E8%8B%B1%E7%9A%87%E5%A8%9B%E6%A8%82eegmusic', 281);
 
 
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
@@ -299,6 +301,8 @@ INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('莲', 9, 110, 'pop', 'english', 'https://www.youtube.com/watch?v=j4qVhOaRBSY&ab_channel=LAY', 317);
 
+
+
 INSERT INTO joins (artist_id, song_id) VALUES (18, 29);
 INSERT INTO joins (artist_id, song_id) VALUES (19, 30);
 INSERT INTO joins (artist_id, song_id) VALUES (20, 31);
@@ -306,25 +310,28 @@ INSERT INTO joins (artist_id, song_id) VALUES (21, 32);
 INSERT INTO joins (artist_id, song_id) VALUES (22, 33);
 INSERT INTO joins (artist_id, song_id) VALUES (22, 34);
 
-INSERT INTO joins (artist_id, song_id) VALUES (23, 35);
-INSERT INTO joins (artist_id, song_id) VALUES (23, 36);
-INSERT INTO joins (artist_id, song_id) VALUES (23, 37);
-INSERT INTO joins (artist_id, song_id) VALUES (24, 38);
-INSERT INTO joins (artist_id, song_id) VALUES (25, 39);
 
-INSERT INTO joins (artist_id, song_id) VALUES (25, 40);
-INSERT INTO joins (artist_id, song_id) VALUES (25, 41);
-INSERT INTO joins (artist_id, song_id) VALUES (25, 42);
+INSERT INTO joins (artist_id, song_id) VALUES (23,35);
+INSERT INTO joins (artist_id, song_id) VALUES (24,36);
+INSERT INTO joins (artist_id, song_id) VALUES (24,37);
+INSERT INTO joins (artist_id, song_id) VALUES (24,38);
+INSERT INTO joins (artist_id, song_id) VALUES (25,39);
 
-INSERT INTO joins (artist_id, song_id) VALUES (26, 43);
-INSERT INTO joins (artist_id, song_id) VALUES (27, 44);
-INSERT INTO joins (artist_id, song_id) VALUES (28, 45);
-INSERT INTO joins (artist_id, song_id) VALUES (29, 46);
-INSERT INTO joins (artist_id, song_id) VALUES (29, 47);
+INSERT INTO joins (artist_id, song_id) VALUES (26,40);
+
+INSERT INTO joins (artist_id, song_id) VALUES (26,41);
+INSERT INTO joins (artist_id, song_id) VALUES (26,42);
+INSERT INTO joins (artist_id, song_id) VALUES (27,43);
 
 
 
-INSERT INTO joins (artist_id, song_id) VALUES (30, 48);
-INSERT INTO joins (artist_id, song_id) VALUES (30, 49);
-INSERT INTO joins (artist_id, song_id) VALUES (30, 50);
-INSERT INTO joins (artist_id, song_id) VALUES (31, 51);
+INSERT INTO joins (artist_id, song_id) VALUES (28,44);
+INSERT INTO joins (artist_id, song_id) VALUES (29,45);
+INSERT INTO joins (artist_id, song_id) VALUES (30,46);
+INSERT INTO joins (artist_id, song_id) VALUES (30,47);
+
+INSERT INTO joins (artist_id, song_id) VALUES (31,48);
+
+INSERT INTO joins (artist_id, song_id) VALUES (31,49);
+INSERT INTO joins (artist_id, song_id) VALUES (31,50);
+INSERT INTO joins (artist_id, song_id) VALUES (32,51);
