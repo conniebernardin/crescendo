@@ -234,9 +234,9 @@ INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('Montero', 7, 179, 'pop', 'english', 'https://www.youtube.com/watch?v=6swmTBVI83k&ab_channel=LilNasXVEVO', 137);
 
+
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('Good 4 U', 7, 169, 'rock', 'english', 'https://www.youtube.com/watch?v=gNi_6U5Pm_o&ab_channel=OliviaRodrigoVEVO', 178);
-
 
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('Traitor', 2, 101, 'indie', 'english', 'https://www.youtube.com/watch?v=LYeIr2bBdUA&ab_channel=OliviaRodrigo', 169);
@@ -245,15 +245,16 @@ INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('光年之外', 5, 176, 'pop', 'chinese', 'https://www.youtube.com/watch?v=T4SimnaiktU&ab_channel=GEMblog', 236);
 
+
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('告白气球', 6, 180, 'pop', 'chinese', 'https://www.youtube.com/watch?v=bu7nU9Mhpyo&ab_channel=%E5%91%A8%E6%9D%B0%E5%80%ABJayChou', 215);
 
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('Mojito', 10, 115, 'pop', 'chinese', 'https://www.youtube.com/watch?v=-biOGdYiF-I&ab_channel=%E5%91%A8%E6%9D%B0%E5%80%ABJayChou', 185);
 
-
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('说好不哭', 5, 152, 'pop', 'chinese', 'https://www.youtube.com/watch?v=HK7SPnGSxLM&ab_channel=%E5%91%A8%E6%9D%B0%E5%80%ABJayChou', 222);
+
 
 INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('Dynamite', 10, 114, 'pop', 'english', 'https://www.youtube.com/watch?v=gdZLi9oWNZg&ab_channel=HYBELABELS', 199);
@@ -318,7 +319,6 @@ INSERT INTO joins (artist_id, song_id) VALUES (24,38);
 INSERT INTO joins (artist_id, song_id) VALUES (25,39);
 
 INSERT INTO joins (artist_id, song_id) VALUES (26,40);
-
 INSERT INTO joins (artist_id, song_id) VALUES (26,41);
 INSERT INTO joins (artist_id, song_id) VALUES (26,42);
 INSERT INTO joins (artist_id, song_id) VALUES (27,43);
@@ -331,7 +331,6 @@ INSERT INTO joins (artist_id, song_id) VALUES (30,46);
 INSERT INTO joins (artist_id, song_id) VALUES (30,47);
 
 INSERT INTO joins (artist_id, song_id) VALUES (31,48);
-
 INSERT INTO joins (artist_id, song_id) VALUES (31,49);
 INSERT INTO joins (artist_id, song_id) VALUES (31,50);
 INSERT INTO joins (artist_id, song_id) VALUES (32,51);
