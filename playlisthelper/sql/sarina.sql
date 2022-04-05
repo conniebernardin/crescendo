@@ -185,3 +185,43 @@ INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
 
  INSERT INTO songs (song_title, mood, tempo, genre, language, link, length)
  VALUES ('House in LA', 3, 117, 'indie', 'english', 'https://www.youtube.com/watch?v=J6dtXL_P2b8&ab_channel=JungleVEVO', 292);
+
+
+INSERT INTO joins (artist_id, song_id) VALUES (53, 92);
+INSERT INTO joins (artist_id, song_id) VALUES (53, 93);
+INSERT INTO joins (artist_id, song_id) VALUES (54, 94);
+INSERT INTO joins (artist_id, song_id) VALUES (55, 95);
+INSERT INTO joins (artist_id, song_id) VALUES (56, 96);
+INSERT INTO joins (artist_id, song_id) VALUES (57, 97);
+INSERT INTO joins (artist_id, song_id) VALUES (57, 98);
+INSERT INTO joins (artist_id, song_id) VALUES (58, 99);
+INSERT INTO joins (artist_id, song_id) VALUES (58, 100);
+INSERT INTO joins (artist_id, song_id) VALUES (58, 101);
+INSERT INTO joins (artist_id, song_id) VALUES (59, 102);
+INSERT INTO joins (artist_id, song_id) VALUES (59, 103);
+INSERT INTO joins (artist_id, song_id) VALUES (59, 104);
+INSERT INTO joins (artist_id, song_id) VALUES (60, 105);
+INSERT INTO joins (artist_id, song_id) VALUES (60, 106);
+INSERT INTO joins (artist_id, song_id) VALUES (60, 107);
+INSERT INTO joins (artist_id, song_id) VALUES (60, 108);
+INSERT INTO joins (artist_id, song_id) VALUES (61, 109);
+INSERT INTO joins (artist_id, song_id) VALUES (61, 110);
+INSERT INTO joins (artist_id, song_id) VALUES (61, 111);
+INSERT INTO joins (artist_id, song_id) VALUES (62, 112);
+INSERT INTO joins (artist_id, song_id) VALUES (62, 113);
+INSERT INTO joins (artist_id, song_id) VALUES (62, 114);
+INSERT INTO joins (artist_id, song_id) VALUES (63, 115);
+INSERT INTO joins (artist_id, song_id) VALUES (63, 116);
+INSERT INTO joins (artist_id, song_id) VALUES (63, 117);
+INSERT INTO joins (artist_id, song_id) VALUES (64, 118);
+INSERT INTO joins (artist_id, song_id) VALUES (64, 119);
+INSERT INTO joins (artist_id, song_id) VALUES (65, 120);
+INSERT INTO joins (artist_id, song_id) VALUES (65, 121);
+INSERT INTO joins (artist_id, song_id) VALUES (65, 122);
+INSERT INTO joins (artist_id, song_id) VALUES (66, 123);
+INSERT INTO joins (artist_id, song_id) VALUES (66, 124);
+INSERT INTO joins (artist_id, song_id) VALUES (67, 125);
+INSERT INTO joins (artist_id, song_id) VALUES (67, 126);
+INSERT INTO joins (artist_id, song_id) VALUES (67, 127);
+INSERT INTO joins (artist_id, song_id) VALUES (68, 128);
+INSERT INTO joins (artist_id, song_id) VALUES (68, 129);
