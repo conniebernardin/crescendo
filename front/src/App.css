@@ -8,6 +8,8 @@
   --accent3-color: #cb88ff;
   --accent4-color: #00c4cc;
   --accent5-color: #343397;
+  --dark-color: #121640;
+  --pink-color: #e43397;
 }
 
 *{
@@ -114,7 +116,7 @@ body{
   margin: 2rem;
 }
 
-.logo, .basic-logo{
+.logo, .basic-logo, .dark-logo{
   display: block;
   height: 30%;
   width: 30%;
@@ -122,7 +124,7 @@ body{
   margin-right: auto;
 }
 
-.basic-logo{
+.basic-logo, .dark-logo{
   padding-top: 2rem;
 }
 
@@ -254,9 +256,9 @@ width: 70%;
 .landing-card{
   display: flex;
   align-items: center;
-  
+  background-color: var(--dark-color);
   flex-direction: column;
-
+height: 100%;
   
 }
 
@@ -267,7 +269,8 @@ width: 70%;
 
 .start-button{
 font-size: 2rem;
-  
+color: var(--pink-color);
+padding-bottom: 3rem;
 }
 
 a{
@@ -278,8 +281,11 @@ a{
 .landing-text{
   width: 50%;
   text-align: justify;
+  padding-top: 2rem;
   padding-bottom: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
-
+.intro-text{
+  padding-top: 2rem;
+}
