@@ -11,7 +11,6 @@ const HomePage = ({setMood, setTempo, setLength, songFilter, setPlaylist}) => {
         <div className="homepage-card">
         <Link to="/" className='homepage-btn'>
                  <img src={CrescendoLogo} alt="Pink and blue crescendo logo" className='logo'></img>
-
         </Link>
 
        

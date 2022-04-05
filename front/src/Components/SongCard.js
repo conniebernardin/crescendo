@@ -15,12 +15,14 @@ const handleButtonClick = ()=> {
 
 
                 <div className="song">
+                    <div className="song-info">
                     <h1 className="song-title"> {song.songTitle} </h1>
 
                     <h1 className="artist-name"> {song.artistName}</h1>
 
                     <h1 className="artist-name">{song.index}</h1>
-                    <button onClick = {handleButtonClick}>&#9658;</button>
+                    </div>
+                    <button className="play-btn" onClick = {handleButtonClick}>&#9658;</button>
                 </div>
 
 
