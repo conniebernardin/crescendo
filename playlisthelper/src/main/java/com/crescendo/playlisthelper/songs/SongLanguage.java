@@ -4,7 +4,8 @@ public enum SongLanguage {
 
     ENGLISH,
     AMERICAN,
-    CHINESE
+    CHINESE,
+    JAPANESE
 
 
 }
