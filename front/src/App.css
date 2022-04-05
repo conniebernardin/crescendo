@@ -42,8 +42,14 @@ background-repeat: no-repeat; */
   /* box-shadow: 0 0 30px 20px #cb88ff67; */
 }
 
+.slider-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .slider-container{
- padding-top: 5rem;
+ padding-top: 2.5rem;
 
   
 }

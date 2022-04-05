@@ -19,7 +19,7 @@ const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}
      }
 
     return(
-<>
+<div className = "slider-card">
 <h1 className="mood-heading">Mood</h1>
         <ReactSlider
             onChange= {onMoodSlide}
@@ -62,7 +62,7 @@ const SliderContainer = ({setMood, setTempo, setLength, songFilter, setPlaylist}
     <button onClick={handleFormSubmit}>&#9658;</button>
     </Link>
        
-</>
+</div>
     )
 
 }
