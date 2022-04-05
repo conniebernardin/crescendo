@@ -251,6 +251,7 @@ max-width: 28rem;
 
 .song-info{
 width: 70%;
+text-align: left;
 }
 
 .song-title{
